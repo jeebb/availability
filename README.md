@@ -1,14 +1,36 @@
-# availability
+# Availability
 
-A new Flutter package project.
+A simple if-else widget renderer in an object-oriented way. You can find it similar to Visibility, but with WidgetBuilder usage. With this, the child widget is not put into context until the condition is satisfied.
+
+#code-for-fun
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### Usage:
+```dart
+Availability(
+    available: <condition>,
+    childBuilder: (BuildContext context) => <widget>,
+)
+```
+
+or 
+
+```dart
+Availability(
+    available: <condition>,
+    childBuilder: (BuildContext context) => <widget>,
+    elseBuilder: (BuildContext context) => <another_widget>,
+)
+```
+
+*** Similar dart code without Availability:
+
+```dart
+if (<condition>) {
+    return <widget>;
+} else {
+    return <another_widget>;
+}
+```
