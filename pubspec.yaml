@@ -1,6 +1,7 @@
 name: availability
 description: control when to render the widget (similar to Visibility but with WidgetBuilder)
 version: 1.0.0
+repository: https://github.com/jeebb/availability
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
